@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CTASection = () => {
   return (
@@ -25,8 +26,8 @@ const CTASection = () => {
             Start Chatting Now
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
-          <Button variant="outline" size="lg" className="text-lg px-8 py-4">
-            Learn More
+          <Button variant="outline" size="lg" className="text-lg px-8 py-4" asChild>
+            <Link to="/skills">About Developer</Link>
           </Button>
         </div>
         
